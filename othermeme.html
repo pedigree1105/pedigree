@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股市梗圖專區</title>
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            color: var(--text-color);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* 網格佈局核心 */
+        .meme-grid {
+            display: grid;
+            /* 自動填滿，每張圖最小寬度 300px */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 梗圖卡片樣式 */
+        .meme-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .meme-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 圖片容器 */
+        .meme-image-container {
+            width: 100%;
+            background-color: #eee;
+            /* 保持圖片比例，或者設定固定高度 */
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .meme-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 文字說明區塊 */
+        .meme-info {
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .meme-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        .meme-desc {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html" class="back-btn">← 回首頁</a>
+    <h1 style="background-color: #F5A623">綜合口味梗圖</h1>
+</div>
+
+
+<div class="meme-grid">
+
+    <div class="meme-card">
+        <div class="meme-image-container">
+            <img src="Image/amputation.jpg" alt="被飛蟑螂碰到">
+        </div>
+        <div class="meme-info">
+            <div class="meme-title">被飛蟑螂碰到</div>
+            <div class="meme-desc">(蟑螂飛到右手上)<br>醫生 : 「右手確定要截肢嗎?」<br>「確定!」</div>
+        </div>
+    </div>
+
+    <div class="meme-card">
+        <div class="meme-image-container">
+            <img src="Image/GERD.jpg" alt="GERD">
+        </div>
+        <div class="meme-info">
+            <div class="meme-title">胃食道逆流</div>
+            <div class="meme-desc">「為什麼吃完鮭魚肚會痛?」<br>「為什麼?」 <br>「牠在胃食道逆流」</div>
+        </div>
+    </div>
+
+    <div class="meme-card">
+        <div class="meme-image-container">
+            <img src="Image/TrustFundBaby.jpeg" alt="富二代">
+        </div>
+        <div class="meme-info">
+            <div class="meme-title">富二代</div>
+            <div class="meme-desc">富二代 : 「5/1勞動節有放假嗎?」 <br>一般人 : 「有啊，呼~等好久」 <br>富二代 : 「我每天都放假。」</div>
+        </div>
+    </div>
+	
+	<div class="meme-card">
+        <div class="meme-image-container">
+            <img src="Image/Invisible.jpeg" alt="隱形">
+        </div>
+        <div class="meme-info">
+            <div class="meme-title">隱形</div>
+            <div class="meme-desc">在家找貓找了半天 <br>貓咪 : (你在大驚小怪什麼) </div>
+        </div>
+    </div>
+	
+	<div class="meme-card">
+        <div class="meme-image-container">
+            <img src="Image/HardToDo.webp" alt="難為">
+        </div>
+        <div class="meme-info">
+            <div class="meme-title">月老難為</div>
+            <div class="meme-desc">月老我想脫單過情人節 <br>不要換班! </div>
+        </div>
+    </div>
+	
+	<div class="meme-card">
+        <div class="meme-image-container">
+            <img src="Image/LastSceneISaw.jpeg" alt="最後一幕">
+        </div>
+        <div class="meme-info">
+            <div class="meme-title">最後一幕</div>
+            <div class="meme-desc">這是我昏迷前看到的最後一幕: <br>(肥柴飛過來)</div>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+</html>
