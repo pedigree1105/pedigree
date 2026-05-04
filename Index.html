@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梗圖拼盤</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f0f0f0; margin: 0; }
+        h1 { color: #333; }
+        .button-container { display: flex; gap: 20px; }
+        .btn { padding: 15px 30px; font-size: 18px; cursor: pointer; border: none; border-radius: 8px; color: white; text-decoration: none; transition: 0.3s; }
+        .btn-doctor { background-color: #4A90E2; }
+        .btn-stock { background-color: #50E3C2; }
+        .btn-general { background-color: #F5A623; }
+        .btn:hover { opacity: 0.8; transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+    <h1>請選擇你想看的梗圖類別</h1>
+    <div class="button-container">
+        <a href="./doctor.html" class="btn btn-doctor">醫生梗</a>
+        <a href="./stockmarket.html" class="btn btn-stock">股市梗</a>
+        <a href="./othermeme.html" class="btn btn-general">綜合口味</a>
+    </div>
+</body>
+</html>
